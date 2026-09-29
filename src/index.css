@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-royal-iris: #3A0CA3;
+  --color-purple-hover: #280779;
+  --color-purple-light: #F0EAFE;
+  --color-butter-yellow: #FFF275;
+  --color-main-bg: #FCFBF5;
+  --color-card-bg: #FFFFFF;
+  --color-main-text: #24213A;
+  --color-muted-text: #6B6880;
+  --color-theme-border: #E9E5F5;
+}
+
+@layer base {
+  body {
+    background-color: #FCFBF5;
+    color: #24213A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  ::selection {
+    background-color: #FFF275;
+    color: #24213A;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
